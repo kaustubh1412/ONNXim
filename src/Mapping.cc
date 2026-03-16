@@ -89,14 +89,35 @@ void MappingTable::gemm_mapping(Mapping::LoopCounts &key) {
     }
     num_tiles = tile_I * tile_J;
   }
-  if(num_tiles % _config.num_cores != 0) {
-    int increase_tile = num_tiles % _config.num_cores;
-    if(dim_J > dim_I && dim_J > _config.num_cores) {
-      tile_J += increase_tile;
-    } else if(dim_I > dim_J && dim_I > _config.num_cores) {
-      tile_I += increase_tile;
-    }
+
+// update start
+  if (num_tiles % _config.num_cores != 0) {
+    uint32_t required_tiles = ((num_tiles / _config.num_cores) + 1) * _config.num_cores;
+    float scale = sqrt((float)required_tiles / num_tiles);
+    
+    // Scale dimensions to reach a multiple of the core count
+    tile_I = (uint32_t)(tile_I * scale);
+    tile_J = (uint32_t)(tile_J * scale);
+    
+    // Re-verify after scaling to avoid overflow of SRAM
+    inner_I = ceil_div(dim_I_padded, tile_I);
+    inner_J = ceil_div(dim_J_padded, tile_J);
+    
+    // Align with Systolic Array dimensions
+    inner_I = (inner_I + dim - 1) / dim * dim;
+    inner_J = (inner_J + dim - 1) / dim * dim;
   }
+  // update end
+
+  
+  // if(num_tiles % _config.num_cores != 0) {
+  //   int increase_tile = num_tiles % _config.num_cores;
+  //   if(dim_J > dim_I && dim_J > _config.num_cores) {
+  //     tile_J += increase_tile;
+  //   } else if(dim_I > dim_J && dim_I > _config.num_cores) {
+  //     tile_I += increase_tile;
+  //   }
+  // }
 
   inner_I = ceil_div(dim_I_padded, tile_I);
   inner_J = ceil_div(dim_J_padded, tile_J);
