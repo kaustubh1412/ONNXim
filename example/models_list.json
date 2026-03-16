@@ -1,8 +1,8 @@
 {
  "models": [
     {
-        "name": "resnet18",
-        "batch_size" : 1
+        "name": "bert",
+        "model_path": "./models/bert/bert.onnx"
     }
  ]
 }
