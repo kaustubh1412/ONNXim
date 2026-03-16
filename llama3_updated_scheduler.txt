@@ -1,0 +1,1325 @@
+[2026-02-22 11:05:08.462] [info] CPU 0: Partition 0
+[2026-02-22 11:05:08.463] [info] CPU 1: Partition 0
+[2026-02-22 11:05:08.463] [info] CPU 2: Partition 0
+[2026-02-22 11:05:08.463] [info] CPU 3: Partition 0
+[2026-02-22 11:05:08.463] [info] Running in default mode
+[2026-02-22 11:05:08.463] [info] Simulator Configuration:
+[2026-02-22 11:05:08.463] [info] [Core 0] Systolic Array Throughput: 131072 GFLOPS, Spad size: 32768 KB, Accumulator size: 4096 KB
+[2026-02-22 11:05:08.463] [info] [Core 1] Systolic Array Throughput: 131072 GFLOPS, Spad size: 32768 KB, Accumulator size: 4096 KB
+[2026-02-22 11:05:08.463] [info] [Core 2] Systolic Array Throughput: 131072 GFLOPS, Spad size: 32768 KB, Accumulator size: 4096 KB
+[2026-02-22 11:05:08.463] [info] [Core 3] Systolic Array Throughput: 131072 GFLOPS, Spad size: 32768 KB, Accumulator size: 4096 KB
+[2026-02-22 11:05:08.463] [info] DRAM Bandwidth 614 GB/s
+[2026-02-22 11:05:08.463] [info] Ramulator2 config: ./configs/../configs/ramulator2_configs/HBM2.yaml
+[2026-02-22 11:05:08.488] [info] Initialize SimpleInterconnect
+[2026-02-22 11:05:08.494] [info] Register model: llama3
+[2026-02-22 11:05:08.494] [info] Model Name
+[2026-02-22 11:05:09.871] [info] ======Start Simulation=====
+[2026-02-22 11:05:10.910] [info] [GEMM] spad_size: 33554432 accum_size: 4194304
+[2026-02-22 11:05:10.910] [info] [GEMM] required_sram_size: 8388608 required_accum_size: 524288
+[2026-02-22 11:05:10.910] [info] [GEMM] Used gemmini gemm mapping: Total N:512 C:4096 M:4096, Outer N:1 C:1 M:8, Inner N:512 C:4096 M:512
+[2026-02-22 11:05:11.307] [info] [GemmWs] Keys K = 4096, N = 512, M = 4096
+[2026-02-22 11:05:11.307] [info] [GemmWS]: total 17.179869 GFLOPs, 0.04194304 GB
+[2026-02-22 11:05:11.307] [info] [GemmWS]: Theoretical time(ms): 0.13107199629303068 Compute time: 0.13107199629303068 Memory time: 0.06831114296801388
+[2026-02-22 11:05:11.307] [info] [GEMM] spad_size: 33554432 accum_size: 4194304
+[2026-02-22 11:05:11.307] [info] [GEMM] required_sram_size: 8388608 required_accum_size: 524288
+[2026-02-22 11:05:11.307] [info] [GEMM] Used gemmini gemm mapping: Total N:512 C:4096 M:14336, Outer N:1 C:1 M:28, Inner N:512 C:4096 M:512
+[2026-02-22 11:05:12.684] [info] [GemmWs] Keys K = 4096, N = 512, M = 14336
+[2026-02-22 11:05:12.684] [info] [GemmWS]: total 60.129543 GFLOPs, 0.13631488 GB
+[2026-02-22 11:05:12.684] [info] [GemmWS]: Theoretical time(ms): 0.4587520088534802 Compute time: 0.4587520088534802 Memory time: 0.2220112073700875
+[2026-02-22 11:05:12.684] [info] [GEMM] spad_size: 33554432 accum_size: 4194304
+[2026-02-22 11:05:12.684] [info] [GEMM] required_sram_size: 9699328 required_accum_size: 524288
+[2026-02-22 11:05:12.684] [info] [GEMM] Used gemmini gemm mapping: Total N:512 C:14336 M:4096, Outer N:1 C:4 M:8, Inner N:512 C:4736 M:512
+[2026-02-22 11:05:14.014] [info] [GemmWs] Keys K = 14336, N = 512, M = 4096
+[2026-02-22 11:05:14.014] [info] [GemmWS]: total 60.129543 GFLOPs, 0.13631488 GB
+[2026-02-22 11:05:14.014] [info] [GemmWS]: Theoretical time(ms): 0.4587520088534802 Compute time: 0.4587520088534802 Memory time: 0.2220112073700875
+[2026-02-22 11:05:14.014] [info] ./models/llama3/llama3.onnx Model initialization time: 4.142975 seconds
+[2026-02-22 11:05:14.039] [info] Schedule model: llama3 at 1000 us
+[2026-02-22 11:05:14.039] [info] MODEL llama3 Scheduled, Total Request: 1
+[2026-02-22 11:05:14.039] [info] executable layer count 1
+[2026-02-22 11:05:14.039] [info] Start layer 
+[2026-02-22 11:05:14.039] [info] HBM2-CH_0: BW utilization 0% (0 reads, 0 writes)
+[2026-02-22 11:05:15.312] [info] HBM2-CH_0: BW utilization 63% (6108 reads, 0 writes)
+[2026-02-22 11:05:15.312] [info] Core [0] : MatMul active cycle 0 Vector active cycle 0 
+[2026-02-22 11:05:15.312] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:15.312] [info] Core [0] : Memory unit idle cycle 1 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:15.312] [info] Core [0] : Systolic Array Utilization(%) 0.00 (0.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 8000
+[2026-02-22 11:05:16.190] [info] HBM2-CH_0: BW utilization 79% (7653 reads, 0 writes)
+[2026-02-22 11:05:16.191] [info] Core [0] : MatMul active cycle 0 Vector active cycle 0 
+[2026-02-22 11:05:16.191] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:16.191] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:16.191] [info] Core [0] : Systolic Array Utilization(%) 0.00 (0.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 16000
+[2026-02-22 11:05:16.690] [info] HBM2-CH_0: BW utilization 83% (7996 reads, 0 writes)
+[2026-02-22 11:05:16.690] [info] Core [0] : MatMul active cycle 3200 Vector active cycle 0 
+[2026-02-22 11:05:16.690] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:16.690] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:16.690] [info] Core [0] : Systolic Array Utilization(%) 43.81 (40.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 24000
+[2026-02-22 11:05:17.009] [info] HBM2-CH_0: BW utilization 83% (7997 reads, 0 writes)
+[2026-02-22 11:05:17.009] [info] Core [0] : MatMul active cycle 3840 Vector active cycle 0 
+[2026-02-22 11:05:17.009] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:17.009] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:17.009] [info] Core [0] : Systolic Array Utilization(%) 51.97 (48.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 32000
+[2026-02-22 11:05:17.292] [info] HBM2-CH_0: BW utilization 83% (7996 reads, 0 writes)
+[2026-02-22 11:05:17.292] [info] Core [0] : MatMul active cycle 3968 Vector active cycle 0 
+[2026-02-22 11:05:17.292] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:17.292] [info] Core [0] : Memory unit idle cycle 7231 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:17.292] [info] Core [0] : Systolic Array Utilization(%) 51.97 (49.60% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 40000
+[2026-02-22 11:05:17.766] [info] HBM2-CH_0: BW utilization 71% (6822 reads, 0 writes)
+[2026-02-22 11:05:17.768] [info] Core [0] : MatMul active cycle 3840 Vector active cycle 0 
+[2026-02-22 11:05:17.768] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:17.768] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:17.768] [info] Core [0] : Systolic Array Utilization(%) 52.06 (48.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 48000
+[2026-02-22 11:05:18.390] [info] HBM2-CH_0: BW utilization 63% (6080 reads, 0 writes)
+[2026-02-22 11:05:18.392] [info] Core [0] : MatMul active cycle 1536 Vector active cycle 0 
+[2026-02-22 11:05:18.392] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:18.392] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:18.392] [info] Core [0] : Systolic Array Utilization(%) 17.67 (19.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 56000
+[2026-02-22 11:05:19.017] [info] HBM2-CH_0: BW utilization 63% (6080 reads, 0 writes)
+[2026-02-22 11:05:19.019] [info] Core [0] : MatMul active cycle 6656 Vector active cycle 0 
+[2026-02-22 11:05:19.019] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:19.019] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:19.019] [info] Core [0] : Systolic Array Utilization(%) 87.88 (83.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 64000
+[2026-02-22 11:05:19.647] [info] HBM2-CH_0: BW utilization 63% (6081 reads, 0 writes)
+[2026-02-22 11:05:19.649] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:19.649] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:19.649] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:19.649] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 72000
+[2026-02-22 11:05:20.277] [info] HBM2-CH_0: BW utilization 63% (6084 reads, 0 writes)
+[2026-02-22 11:05:20.279] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:20.279] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:20.279] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:20.279] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 80000
+[2026-02-22 11:05:20.911] [info] HBM2-CH_0: BW utilization 70% (6759 reads, 0 writes)
+[2026-02-22 11:05:20.913] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:20.913] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:20.913] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:20.913] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 88000
+[2026-02-22 11:05:21.339] [info] HBM2-CH_0: BW utilization 83% (8038 reads, 0 writes)
+[2026-02-22 11:05:21.341] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:21.341] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:21.341] [info] Core [0] : Memory unit idle cycle 7168 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:21.341] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 96000
+[2026-02-22 11:05:21.632] [info] HBM2-CH_0: BW utilization 83% (7997 reads, 0 writes)
+[2026-02-22 11:05:21.633] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:21.633] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:21.633] [info] Core [0] : Memory unit idle cycle 7872 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:21.633] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 104000
+[2026-02-22 11:05:21.930] [info] HBM2-CH_0: BW utilization 83% (7998 reads, 0 writes)
+[2026-02-22 11:05:21.931] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:21.931] [info] Core [0] : issued tile 1 
+[2026-02-22 11:05:21.931] [info] Core [0] : Memory unit idle cycle 7936 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:21.931] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 112000
+[2026-02-22 11:05:22.252] [info] HBM2-CH_0: BW utilization 79% (7675 reads, 0 writes)
+[2026-02-22 11:05:22.255] [info] Core [0] : MatMul active cycle 4224 Vector active cycle 0 
+[2026-02-22 11:05:22.255] [info] Core [0] : issued tile 1 
+[2026-02-22 11:05:22.255] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:22.255] [info] Core [0] : Systolic Array Utilization(%) 55.09 (52.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 120000
+[2026-02-22 11:05:22.816] [info] HBM2-CH_0: BW utilization 63% (6085 reads, 0 writes)
+[2026-02-22 11:05:22.820] [info] Core [0] : MatMul active cycle 3840 Vector active cycle 0 
+[2026-02-22 11:05:22.820] [info] Core [0] : issued tile 1 
+[2026-02-22 11:05:22.820] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:22.820] [info] Core [0] : Systolic Array Utilization(%) 52.06 (48.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 128000
+[2026-02-22 11:05:23.468] [info] HBM2-CH_0: BW utilization 63% (6085 reads, 0 writes)
+[2026-02-22 11:05:23.473] [info] Core [0] : MatMul active cycle 2816 Vector active cycle 0 
+[2026-02-22 11:05:23.473] [info] Core [0] : issued tile 1 
+[2026-02-22 11:05:23.473] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:23.473] [info] Core [0] : Systolic Array Utilization(%) 33.70 (35.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 136000
+[2026-02-22 11:05:24.152] [info] HBM2-CH_0: BW utilization 63% (6085 reads, 0 writes)
+[2026-02-22 11:05:24.157] [info] Core [0] : MatMul active cycle 5376 Vector active cycle 0 
+[2026-02-22 11:05:24.157] [info] Core [0] : issued tile 1 
+[2026-02-22 11:05:24.157] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:24.157] [info] Core [0] : Systolic Array Utilization(%) 71.82 (67.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 144000
+[2026-02-22 11:05:24.843] [info] HBM2-CH_0: BW utilization 61% (5416 reads, 511 writes)
+[2026-02-22 11:05:24.848] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:24.848] [info] Core [0] : issued tile 1 
+[2026-02-22 11:05:24.848] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:24.848] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 152000
+[2026-02-22 11:05:25.491] [info] HBM2-CH_0: BW utilization 37% (37 reads, 3585 writes)
+[2026-02-22 11:05:25.495] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:25.495] [info] Core [0] : issued tile 1 
+[2026-02-22 11:05:25.495] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:25.495] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 160000
+[2026-02-22 11:05:25.827] [info] HBM2-CH_0: BW utilization 0% (0 reads, 0 writes)
+[2026-02-22 11:05:25.828] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:25.828] [info] Core [0] : issued tile 1 
+[2026-02-22 11:05:25.828] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:25.828] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 168000
+[2026-02-22 11:05:26.242] [info] HBM2-CH_0: BW utilization 18% (0 reads, 1784 writes)
+[2026-02-22 11:05:26.248] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:26.248] [info] Core [0] : issued tile 1 
+[2026-02-22 11:05:26.248] [info] Core [0] : Memory unit idle cycle 7168 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:26.248] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 176000
+[2026-02-22 11:05:26.688] [info] HBM2-CH_0: BW utilization 20% (0 reads, 1981 writes)
+[2026-02-22 11:05:26.693] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:26.693] [info] Core [0] : issued tile 1 
+[2026-02-22 11:05:26.693] [info] Core [0] : Memory unit idle cycle 7872 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:26.693] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 184000
+[2026-02-22 11:05:26.753] [info] Layer  finish at 187731
+[2026-02-22 11:05:26.753] [info] Total compute time 187731
+[2026-02-22 11:05:26.753] [info] executable layer count 1
+[2026-02-22 11:05:26.753] [info] Start layer 
+[2026-02-22 11:05:27.191] [info] HBM2-CH_0: BW utilization 41% (3671 reads, 284 writes)
+[2026-02-22 11:05:27.198] [info] Core [0] : MatMul active cycle 3712 Vector active cycle 0 
+[2026-02-22 11:05:27.198] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:27.198] [info] Core [0] : Memory unit idle cycle 3669 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:27.198] [info] Core [0] : Systolic Array Utilization(%) 45.75 (46.40% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 192000
+[2026-02-22 11:05:27.845] [info] HBM2-CH_0: BW utilization 84% (8159 reads, 0 writes)
+[2026-02-22 11:05:27.848] [info] Core [0] : MatMul active cycle 0 Vector active cycle 0 
+[2026-02-22 11:05:27.848] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:27.848] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:27.848] [info] Core [0] : Systolic Array Utilization(%) 0.00 (0.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 200000
+[2026-02-22 11:05:28.156] [info] HBM2-CH_0: BW utilization 83% (7996 reads, 0 writes)
+[2026-02-22 11:05:28.159] [info] Core [0] : MatMul active cycle 2432 Vector active cycle 0 
+[2026-02-22 11:05:28.159] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:28.159] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:28.159] [info] Core [0] : Systolic Array Utilization(%) 34.45 (30.40% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 208000
+[2026-02-22 11:05:28.461] [info] HBM2-CH_0: BW utilization 83% (7995 reads, 0 writes)
+[2026-02-22 11:05:28.464] [info] Core [0] : MatMul active cycle 3968 Vector active cycle 0 
+[2026-02-22 11:05:28.464] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:28.464] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:28.464] [info] Core [0] : Systolic Array Utilization(%) 51.97 (49.60% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 216000
+[2026-02-22 11:05:28.761] [info] HBM2-CH_0: BW utilization 83% (7996 reads, 0 writes)
+[2026-02-22 11:05:28.764] [info] Core [0] : MatMul active cycle 3840 Vector active cycle 0 
+[2026-02-22 11:05:28.764] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:28.764] [info] Core [0] : Memory unit idle cycle 3499 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:28.764] [info] Core [0] : Systolic Array Utilization(%) 51.99 (48.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 224000
+[2026-02-22 11:05:29.162] [info] HBM2-CH_0: BW utilization 81% (7870 reads, 0 writes)
+[2026-02-22 11:05:29.170] [info] Core [0] : MatMul active cycle 3968 Vector active cycle 0 
+[2026-02-22 11:05:29.170] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:29.170] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:29.170] [info] Core [0] : Systolic Array Utilization(%) 52.04 (49.60% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 232000
+[2026-02-22 11:05:29.853] [info] HBM2-CH_0: BW utilization 80% (7754 reads, 0 writes)
+[2026-02-22 11:05:29.861] [info] Core [0] : MatMul active cycle 3584 Vector active cycle 0 
+[2026-02-22 11:05:29.861] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:29.861] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:29.861] [info] Core [0] : Systolic Array Utilization(%) 48.71 (44.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 240000
+[2026-02-22 11:05:30.545] [info] HBM2-CH_0: BW utilization 80% (7751 reads, 0 writes)
+[2026-02-22 11:05:30.553] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:30.553] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:30.553] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:30.553] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 248000
+[2026-02-22 11:05:31.239] [info] HBM2-CH_0: BW utilization 80% (7743 reads, 0 writes)
+[2026-02-22 11:05:31.248] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:31.248] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:31.248] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:31.248] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 256000
+[2026-02-22 11:05:31.887] [info] HBM2-CH_0: BW utilization 82% (7931 reads, 0 writes)
+[2026-02-22 11:05:31.892] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:31.892] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:31.892] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:31.892] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 264000
+[2026-02-22 11:05:32.186] [info] HBM2-CH_0: BW utilization 84% (8156 reads, 0 writes)
+[2026-02-22 11:05:32.190] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:32.190] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:32.190] [info] Core [0] : Memory unit idle cycle 7291 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:32.190] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 272000
+[2026-02-22 11:05:32.468] [info] HBM2-CH_0: BW utilization 83% (7997 reads, 0 writes)
+[2026-02-22 11:05:32.472] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:32.472] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:32.472] [info] Core [0] : Memory unit idle cycle 7813 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:32.472] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 280000
+[2026-02-22 11:05:32.777] [info] HBM2-CH_0: BW utilization 83% (7996 reads, 0 writes)
+[2026-02-22 11:05:32.782] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:32.782] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:32.782] [info] Core [0] : Memory unit idle cycle 7610 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:32.782] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 288000
+[2026-02-22 11:05:33.133] [info] HBM2-CH_0: BW utilization 82% (7954 reads, 0 writes)
+[2026-02-22 11:05:33.143] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:33.143] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:33.143] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:33.143] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 296000
+[2026-02-22 11:05:33.902] [info] HBM2-CH_0: BW utilization 80% (7752 reads, 0 writes)
+[2026-02-22 11:05:33.914] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:33.914] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:33.914] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:33.914] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 304000
+[2026-02-22 11:05:34.635] [info] HBM2-CH_0: BW utilization 80% (7750 reads, 0 writes)
+[2026-02-22 11:05:34.647] [info] Core [0] : MatMul active cycle 6144 Vector active cycle 0 
+[2026-02-22 11:05:34.647] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:34.647] [info] Core [0] : Memory unit idle cycle 7878 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:34.647] [info] Core [0] : Systolic Array Utilization(%) 79.86 (76.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 312000
+[2026-02-22 11:05:35.357] [info] HBM2-CH_0: BW utilization 80% (7754 reads, 0 writes)
+[2026-02-22 11:05:35.370] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:35.370] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:35.370] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:35.370] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 320000
+[2026-02-22 11:05:36.020] [info] HBM2-CH_0: BW utilization 38% (801 reads, 2908 writes)
+[2026-02-22 11:05:36.031] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:36.031] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:36.031] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:36.031] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 328000
+[2026-02-22 11:05:36.755] [info] HBM2-CH_0: BW utilization 65% (5114 reads, 1220 writes)
+[2026-02-22 11:05:36.768] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:36.768] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:36.768] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:36.768] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 336000
+[2026-02-22 11:05:37.227] [info] HBM2-CH_0: BW utilization 85% (8197 reads, 0 writes)
+[2026-02-22 11:05:37.232] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:37.232] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:37.232] [info] Core [0] : Memory unit idle cycle 7168 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:37.232] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 344000
+[2026-02-22 11:05:37.513] [info] HBM2-CH_0: BW utilization 83% (7997 reads, 0 writes)
+[2026-02-22 11:05:37.518] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:37.518] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:37.518] [info] Core [0] : Memory unit idle cycle 7872 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:37.518] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 352000
+[2026-02-22 11:05:37.845] [info] HBM2-CH_0: BW utilization 83% (7997 reads, 0 writes)
+[2026-02-22 11:05:37.851] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:37.851] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:37.851] [info] Core [0] : Memory unit idle cycle 3075 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:37.851] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 360000
+[2026-02-22 11:05:38.160] [info] HBM2-CH_0: BW utilization 83% (7996 reads, 0 writes)
+[2026-02-22 11:05:38.165] [info] Core [0] : MatMul active cycle 4608 Vector active cycle 0 
+[2026-02-22 11:05:38.165] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:38.165] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:38.165] [info] Core [0] : Systolic Array Utilization(%) 61.39 (57.60% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 368000
+[2026-02-22 11:05:38.741] [info] HBM2-CH_0: BW utilization 81% (7827 reads, 0 writes)
+[2026-02-22 11:05:38.755] [info] Core [0] : MatMul active cycle 3968 Vector active cycle 0 
+[2026-02-22 11:05:38.755] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:38.755] [info] Core [0] : Memory unit idle cycle 4477 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:38.755] [info] Core [0] : Systolic Array Utilization(%) 52.03 (49.60% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 376000
+[2026-02-22 11:05:39.459] [info] HBM2-CH_0: BW utilization 80% (7752 reads, 0 writes)
+[2026-02-22 11:05:39.473] [info] Core [0] : MatMul active cycle 3840 Vector active cycle 0 
+[2026-02-22 11:05:39.473] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:39.473] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:39.473] [info] Core [0] : Systolic Array Utilization(%) 51.78 (48.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 384000
+[2026-02-22 11:05:40.173] [info] HBM2-CH_0: BW utilization 80% (7757 reads, 0 writes)
+[2026-02-22 11:05:40.187] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:40.187] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:40.187] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:40.187] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 392000
+[2026-02-22 11:05:40.862] [info] HBM2-CH_0: BW utilization 63% (4902 reads, 1224 writes)
+[2026-02-22 11:05:40.875] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:40.875] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:40.875] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:40.875] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 400000
+[2026-02-22 11:05:41.568] [info] HBM2-CH_0: BW utilization 43% (1309 reads, 2872 writes)
+[2026-02-22 11:05:41.583] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:41.583] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:41.583] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:41.583] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 408000
+[2026-02-22 11:05:42.218] [info] HBM2-CH_0: BW utilization 82% (7894 reads, 0 writes)
+[2026-02-22 11:05:42.227] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:42.227] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:42.227] [info] Core [0] : Memory unit idle cycle 7775 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:42.227] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 416000
+[2026-02-22 11:05:42.523] [info] HBM2-CH_0: BW utilization 85% (8182 reads, 0 writes)
+[2026-02-22 11:05:42.529] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:42.529] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:42.529] [info] Core [0] : Memory unit idle cycle 7359 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:42.529] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 424000
+[2026-02-22 11:05:42.810] [info] HBM2-CH_0: BW utilization 83% (7998 reads, 0 writes)
+[2026-02-22 11:05:42.816] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:42.816] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:42.816] [info] Core [0] : Memory unit idle cycle 7906 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:42.816] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 432000
+[2026-02-22 11:05:43.164] [info] HBM2-CH_0: BW utilization 83% (7998 reads, 0 writes)
+[2026-02-22 11:05:43.171] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:43.171] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:43.171] [info] Core [0] : Memory unit idle cycle 158 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:43.171] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 440000
+[2026-02-22 11:05:43.615] [info] HBM2-CH_0: BW utilization 82% (7954 reads, 0 writes)
+[2026-02-22 11:05:43.632] [info] Core [0] : MatMul active cycle 4480 Vector active cycle 0 
+[2026-02-22 11:05:43.632] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:43.632] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:43.632] [info] Core [0] : Systolic Array Utilization(%) 58.74 (56.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 448000
+[2026-02-22 11:05:44.345] [info] HBM2-CH_0: BW utilization 80% (7740 reads, 0 writes)
+[2026-02-22 11:05:44.363] [info] Core [0] : MatMul active cycle 4096 Vector active cycle 0 
+[2026-02-22 11:05:44.363] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:44.363] [info] Core [0] : Memory unit idle cycle 7394 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:44.363] [info] Core [0] : Systolic Array Utilization(%) 54.38 (51.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 456000
+[2026-02-22 11:05:45.076] [info] HBM2-CH_0: BW utilization 80% (7755 reads, 0 writes)
+[2026-02-22 11:05:45.093] [info] Core [0] : MatMul active cycle 5632 Vector active cycle 0 
+[2026-02-22 11:05:45.093] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:45.093] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:45.093] [info] Core [0] : Systolic Array Utilization(%) 74.94 (70.40% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 464000
+[2026-02-22 11:05:45.794] [info] HBM2-CH_0: BW utilization 80% (7751 reads, 0 writes)
+[2026-02-22 11:05:45.810] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:45.810] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:45.810] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:45.810] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 472000
+[2026-02-22 11:05:46.481] [info] HBM2-CH_0: BW utilization 39% (956 reads, 2879 writes)
+[2026-02-22 11:05:46.499] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:46.499] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:46.499] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:46.499] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 480000
+[2026-02-22 11:05:47.221] [info] HBM2-CH_0: BW utilization 65% (5113 reads, 1217 writes)
+[2026-02-22 11:05:47.238] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:47.238] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:47.238] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:47.238] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 488000
+[2026-02-22 11:05:47.617] [info] HBM2-CH_0: BW utilization 85% (8200 reads, 0 writes)
+[2026-02-22 11:05:47.625] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:47.625] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:47.625] [info] Core [0] : Memory unit idle cycle 7168 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:47.625] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 496000
+[2026-02-22 11:05:47.908] [info] HBM2-CH_0: BW utilization 83% (7997 reads, 0 writes)
+[2026-02-22 11:05:47.915] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:47.915] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:47.915] [info] Core [0] : Memory unit idle cycle 7872 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:47.915] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 504000
+[2026-02-22 11:05:48.254] [info] HBM2-CH_0: BW utilization 83% (7997 reads, 0 writes)
+[2026-02-22 11:05:48.262] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:48.262] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:48.262] [info] Core [0] : Memory unit idle cycle 3412 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:48.262] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 512000
+[2026-02-22 11:05:48.593] [info] HBM2-CH_0: BW utilization 83% (7997 reads, 0 writes)
+[2026-02-22 11:05:48.604] [info] Core [0] : MatMul active cycle 5888 Vector active cycle 0 
+[2026-02-22 11:05:48.604] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:48.604] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:48.604] [info] Core [0] : Systolic Array Utilization(%) 76.69 (73.60% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 520000
+[2026-02-22 11:05:49.265] [info] HBM2-CH_0: BW utilization 81% (7823 reads, 0 writes)
+[2026-02-22 11:05:49.284] [info] Core [0] : MatMul active cycle 3968 Vector active cycle 0 
+[2026-02-22 11:05:49.284] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:49.284] [info] Core [0] : Memory unit idle cycle 4140 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:49.284] [info] Core [0] : Systolic Array Utilization(%) 52.03 (49.60% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 528000
+[2026-02-22 11:05:50.012] [info] HBM2-CH_0: BW utilization 80% (7754 reads, 0 writes)
+[2026-02-22 11:05:50.032] [info] Core [0] : MatMul active cycle 3840 Vector active cycle 0 
+[2026-02-22 11:05:50.032] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:50.032] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:50.032] [info] Core [0] : Systolic Array Utilization(%) 51.78 (48.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 536000
+[2026-02-22 11:05:50.741] [info] HBM2-CH_0: BW utilization 80% (7756 reads, 0 writes)
+[2026-02-22 11:05:50.767] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:50.767] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:50.767] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:50.767] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 544000
+[2026-02-22 11:05:51.436] [info] HBM2-CH_0: BW utilization 63% (4902 reads, 1176 writes)
+[2026-02-22 11:05:51.455] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:51.455] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:51.455] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:51.455] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 552000
+[2026-02-22 11:05:52.185] [info] HBM2-CH_0: BW utilization 41% (1049 reads, 2920 writes)
+[2026-02-22 11:05:52.206] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:52.206] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:52.206] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:52.206] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 560000
+[2026-02-22 11:05:52.743] [info] HBM2-CH_0: BW utilization 81% (7850 reads, 0 writes)
+[2026-02-22 11:05:52.753] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:52.753] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:52.753] [info] Core [0] : Memory unit idle cycle 7232 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:52.753] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 568000
+[2026-02-22 11:05:53.044] [info] HBM2-CH_0: BW utilization 85% (8226 reads, 0 writes)
+[2026-02-22 11:05:53.052] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:53.052] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:53.052] [info] Core [0] : Memory unit idle cycle 7872 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:53.052] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 576000
+[2026-02-22 11:05:53.376] [info] HBM2-CH_0: BW utilization 83% (7998 reads, 0 writes)
+[2026-02-22 11:05:53.386] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:53.386] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:53.386] [info] Core [0] : Memory unit idle cycle 7207 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:53.386] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 584000
+[2026-02-22 11:05:53.703] [info] HBM2-CH_0: BW utilization 83% (7997 reads, 0 writes)
+[2026-02-22 11:05:53.712] [info] Core [0] : MatMul active cycle 7552 Vector active cycle 0 
+[2026-02-22 11:05:53.712] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:53.712] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:53.712] [info] Core [0] : Systolic Array Utilization(%) 93.28 (94.40% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 592000
+[2026-02-22 11:05:54.245] [info] HBM2-CH_0: BW utilization 83% (7972 reads, 0 writes)
+[2026-02-22 11:05:54.266] [info] Core [0] : MatMul active cycle 4096 Vector active cycle 0 
+[2026-02-22 11:05:54.266] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:54.266] [info] Core [0] : Memory unit idle cycle 281 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:54.266] [info] Core [0] : Systolic Array Utilization(%) 54.38 (51.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 600000
+[2026-02-22 11:05:54.981] [info] HBM2-CH_0: BW utilization 80% (7729 reads, 0 writes)
+[2026-02-22 11:05:55.003] [info] Core [0] : MatMul active cycle 4096 Vector active cycle 0 
+[2026-02-22 11:05:55.003] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:55.003] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:55.003] [info] Core [0] : Systolic Array Utilization(%) 54.38 (51.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 608000
+[2026-02-22 11:05:55.717] [info] HBM2-CH_0: BW utilization 80% (7755 reads, 0 writes)
+[2026-02-22 11:05:55.741] [info] Core [0] : MatMul active cycle 6400 Vector active cycle 0 
+[2026-02-22 11:05:55.741] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:55.741] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:55.741] [info] Core [0] : Systolic Array Utilization(%) 83.76 (80.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 616000
+[2026-02-22 11:05:56.434] [info] HBM2-CH_0: BW utilization 80% (7749 reads, 0 writes)
+[2026-02-22 11:05:56.455] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:56.455] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:56.455] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:56.455] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 624000
+[2026-02-22 11:05:57.135] [info] HBM2-CH_0: BW utilization 41% (1208 reads, 2737 writes)
+[2026-02-22 11:05:57.159] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:57.159] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:57.159] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:57.159] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 632000
+[2026-02-22 11:05:57.822] [info] HBM2-CH_0: BW utilization 63% (4728 reads, 1359 writes)
+[2026-02-22 11:05:57.835] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:57.835] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:57.835] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:57.835] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 640000
+[2026-02-22 11:05:58.177] [info] HBM2-CH_0: BW utilization 85% (8193 reads, 0 writes)
+[2026-02-22 11:05:58.186] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:58.186] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:58.186] [info] Core [0] : Memory unit idle cycle 7168 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:58.186] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 648000
+[2026-02-22 11:05:58.468] [info] HBM2-CH_0: BW utilization 83% (7997 reads, 0 writes)
+[2026-02-22 11:05:58.478] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:05:58.478] [info] Core [0] : issued tile 2 
+[2026-02-22 11:05:58.478] [info] Core [0] : Memory unit idle cycle 7872 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:58.478] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 656000
+[2026-02-22 11:05:58.763] [info] HBM2-CH_0: BW utilization 83% (7997 reads, 0 writes)
+[2026-02-22 11:05:58.772] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:05:58.772] [info] Core [0] : issued tile 1 
+[2026-02-22 11:05:58.772] [info] Core [0] : Memory unit idle cycle 7936 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:58.772] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 664000
+[2026-02-22 11:05:59.139] [info] HBM2-CH_0: BW utilization 83% (7996 reads, 0 writes)
+[2026-02-22 11:05:59.160] [info] Core [0] : MatMul active cycle 5760 Vector active cycle 0 
+[2026-02-22 11:05:59.160] [info] Core [0] : issued tile 1 
+[2026-02-22 11:05:59.160] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:59.160] [info] Core [0] : Systolic Array Utilization(%) 75.24 (72.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 672000
+[2026-02-22 11:05:59.869] [info] HBM2-CH_0: BW utilization 81% (7842 reads, 0 writes)
+[2026-02-22 11:05:59.896] [info] Core [0] : MatMul active cycle 3840 Vector active cycle 0 
+[2026-02-22 11:05:59.896] [info] Core [0] : issued tile 1 
+[2026-02-22 11:05:59.896] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:05:59.896] [info] Core [0] : Systolic Array Utilization(%) 52.04 (48.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 680000
+[2026-02-22 11:06:00.661] [info] HBM2-CH_0: BW utilization 80% (7754 reads, 0 writes)
+[2026-02-22 11:06:00.687] [info] Core [0] : MatMul active cycle 3968 Vector active cycle 0 
+[2026-02-22 11:06:00.687] [info] Core [0] : issued tile 1 
+[2026-02-22 11:06:00.687] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:00.687] [info] Core [0] : Systolic Array Utilization(%) 51.78 (49.60% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 688000
+[2026-02-22 11:06:01.438] [info] HBM2-CH_0: BW utilization 80% (7749 reads, 0 writes)
+[2026-02-22 11:06:01.463] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:01.463] [info] Core [0] : issued tile 1 
+[2026-02-22 11:06:01.463] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:01.463] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 696000
+[2026-02-22 11:06:02.118] [info] HBM2-CH_0: BW utilization 65% (5278 reads, 1005 writes)
+[2026-02-22 11:06:02.134] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:02.134] [info] Core [0] : issued tile 1 
+[2026-02-22 11:06:02.134] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:02.134] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 704000
+[2026-02-22 11:06:02.353] [info] HBM2-CH_0: BW utilization 32% (44 reads, 3106 writes)
+[2026-02-22 11:06:02.357] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:02.357] [info] Core [0] : issued tile 1 
+[2026-02-22 11:06:02.357] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:02.357] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 712000
+[2026-02-22 11:06:02.567] [info] HBM2-CH_0: BW utilization 5% (0 reads, 528 writes)
+[2026-02-22 11:06:02.588] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:02.588] [info] Core [0] : issued tile 1 
+[2026-02-22 11:06:02.588] [info] Core [0] : Memory unit idle cycle 7232 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:02.588] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 720000
+[2026-02-22 11:06:03.198] [info] HBM2-CH_0: BW utilization 27% (0 reads, 2675 writes)
+[2026-02-22 11:06:03.222] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:03.222] [info] Core [0] : issued tile 1 
+[2026-02-22 11:06:03.222] [info] Core [0] : Memory unit idle cycle 7872 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:03.222] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 728000
+[2026-02-22 11:06:03.376] [info] Layer  finish at 734788
+[2026-02-22 11:06:03.376] [info] Total compute time 547057
+[2026-02-22 11:06:03.376] [info] executable layer count 1
+[2026-02-22 11:06:03.376] [info] Start layer 
+[2026-02-22 11:06:03.510] [info] HBM2-CH_0: BW utilization 14% (511 reads, 844 writes)
+[2026-02-22 11:06:03.539] [info] Core [0] : MatMul active cycle 6784 Vector active cycle 0 
+[2026-02-22 11:06:03.539] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:03.539] [info] Core [0] : Memory unit idle cycle 6662 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:03.539] [info] Core [0] : Systolic Array Utilization(%) 83.49 (84.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 736000
+[2026-02-22 11:06:04.287] [info] HBM2-CH_0: BW utilization 55% (5371 reads, 0 writes)
+[2026-02-22 11:06:04.315] [info] Core [0] : MatMul active cycle 0 Vector active cycle 0 
+[2026-02-22 11:06:04.315] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:04.316] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:04.316] [info] Core [0] : Systolic Array Utilization(%) 0.00 (0.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 744000
+[2026-02-22 11:06:05.103] [info] HBM2-CH_0: BW utilization 64% (6188 reads, 0 writes)
+[2026-02-22 11:06:05.134] [info] Core [0] : MatMul active cycle 0 Vector active cycle 0 
+[2026-02-22 11:06:05.134] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:05.134] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:05.134] [info] Core [0] : Systolic Array Utilization(%) 0.00 (0.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 752000
+[2026-02-22 11:06:05.908] [info] HBM2-CH_0: BW utilization 85% (8252 reads, 0 writes)
+[2026-02-22 11:06:05.935] [info] Core [0] : MatMul active cycle 768 Vector active cycle 0 
+[2026-02-22 11:06:05.935] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:05.935] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:05.935] [info] Core [0] : Systolic Array Utilization(%) 13.39 (9.60% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 760000
+[2026-02-22 11:06:06.684] [info] HBM2-CH_0: BW utilization 83% (7996 reads, 0 writes)
+[2026-02-22 11:06:06.709] [info] Core [0] : MatMul active cycle 3968 Vector active cycle 0 
+[2026-02-22 11:06:06.709] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:06.709] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:06.709] [info] Core [0] : Systolic Array Utilization(%) 48.99 (49.60% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 768000
+[2026-02-22 11:06:07.391] [info] HBM2-CH_0: BW utilization 81% (7854 reads, 0 writes)
+[2026-02-22 11:06:07.422] [info] Core [0] : MatMul active cycle 4736 Vector active cycle 0 
+[2026-02-22 11:06:07.422] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:07.422] [info] Core [0] : Memory unit idle cycle 3322 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:07.422] [info] Core [0] : Systolic Array Utilization(%) 62.38 (59.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 776000
+[2026-02-22 11:06:08.056] [info] HBM2-CH_0: BW utilization 84% (8117 reads, 0 writes)
+[2026-02-22 11:06:08.086] [info] Core [0] : MatMul active cycle 4736 Vector active cycle 0 
+[2026-02-22 11:06:08.086] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:08.086] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:08.086] [info] Core [0] : Systolic Array Utilization(%) 62.38 (59.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 784000
+[2026-02-22 11:06:08.811] [info] HBM2-CH_0: BW utilization 65% (6278 reads, 0 writes)
+[2026-02-22 11:06:08.840] [info] Core [0] : MatMul active cycle 4352 Vector active cycle 0 
+[2026-02-22 11:06:08.840] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:08.840] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:08.840] [info] Core [0] : Systolic Array Utilization(%) 58.19 (54.40% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 792000
+[2026-02-22 11:06:09.546] [info] HBM2-CH_0: BW utilization 56% (5411 reads, 0 writes)
+[2026-02-22 11:06:09.576] [info] Core [0] : MatMul active cycle 384 Vector active cycle 0 
+[2026-02-22 11:06:09.576] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:09.576] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:09.576] [info] Core [0] : Systolic Array Utilization(%) 4.19 (4.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 800000
+[2026-02-22 11:06:10.288] [info] HBM2-CH_0: BW utilization 56% (5451 reads, 0 writes)
+[2026-02-22 11:06:10.318] [info] Core [0] : MatMul active cycle 6528 Vector active cycle 0 
+[2026-02-22 11:06:10.318] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:10.318] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:10.318] [info] Core [0] : Systolic Array Utilization(%) 85.40 (81.60% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 808000
+[2026-02-22 11:06:11.031] [info] HBM2-CH_0: BW utilization 56% (5469 reads, 0 writes)
+[2026-02-22 11:06:11.061] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:11.061] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:11.061] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:11.061] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 816000
+[2026-02-22 11:06:11.773] [info] HBM2-CH_0: BW utilization 55% (5342 reads, 0 writes)
+[2026-02-22 11:06:11.803] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:11.803] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:11.803] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:11.803] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 824000
+[2026-02-22 11:06:12.522] [info] HBM2-CH_0: BW utilization 55% (5371 reads, 0 writes)
+[2026-02-22 11:06:12.553] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:12.553] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:12.553] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:12.553] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 832000
+[2026-02-22 11:06:13.276] [info] HBM2-CH_0: BW utilization 57% (5476 reads, 0 writes)
+[2026-02-22 11:06:13.307] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:13.307] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:13.307] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:13.307] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 840000
+[2026-02-22 11:06:13.886] [info] HBM2-CH_0: BW utilization 77% (7401 reads, 0 writes)
+[2026-02-22 11:06:13.897] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:13.897] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:13.897] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:13.897] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 848000
+[2026-02-22 11:06:14.156] [info] HBM2-CH_0: BW utilization 83% (8000 reads, 0 writes)
+[2026-02-22 11:06:14.168] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:14.168] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:14.168] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:14.168] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 856000
+[2026-02-22 11:06:14.476] [info] HBM2-CH_0: BW utilization 83% (7995 reads, 0 writes)
+[2026-02-22 11:06:14.489] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:14.489] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:14.489] [info] Core [0] : Memory unit idle cycle 2256 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:14.489] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 864000
+[2026-02-22 11:06:14.770] [info] HBM2-CH_0: BW utilization 83% (8000 reads, 0 writes)
+[2026-02-22 11:06:14.784] [info] Core [0] : MatMul active cycle 3840 Vector active cycle 0 
+[2026-02-22 11:06:14.784] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:14.784] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:14.784] [info] Core [0] : Systolic Array Utilization(%) 51.06 (48.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 872000
+[2026-02-22 11:06:15.063] [info] HBM2-CH_0: BW utilization 83% (7997 reads, 0 writes)
+[2026-02-22 11:06:15.084] [info] Core [0] : MatMul active cycle 4736 Vector active cycle 0 
+[2026-02-22 11:06:15.084] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:15.084] [info] Core [0] : Memory unit idle cycle 2800 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:15.084] [info] Core [0] : Systolic Array Utilization(%) 57.89 (59.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 880000
+[2026-02-22 11:06:15.829] [info] HBM2-CH_0: BW utilization 59% (5725 reads, 0 writes)
+[2026-02-22 11:06:15.864] [info] Core [0] : MatMul active cycle 4736 Vector active cycle 0 
+[2026-02-22 11:06:15.864] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:15.864] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:15.864] [info] Core [0] : Systolic Array Utilization(%) 62.38 (59.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 888000
+[2026-02-22 11:06:16.616] [info] HBM2-CH_0: BW utilization 56% (5469 reads, 0 writes)
+[2026-02-22 11:06:16.651] [info] Core [0] : MatMul active cycle 1024 Vector active cycle 0 
+[2026-02-22 11:06:16.651] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:16.651] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:16.651] [info] Core [0] : Systolic Array Utilization(%) 17.10 (12.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 896000
+[2026-02-22 11:06:17.390] [info] HBM2-CH_0: BW utilization 56% (5444 reads, 0 writes)
+[2026-02-22 11:06:17.425] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:17.425] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:17.425] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:17.425] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 904000
+[2026-02-22 11:06:18.155] [info] HBM2-CH_0: BW utilization 56% (5450 reads, 0 writes)
+[2026-02-22 11:06:18.191] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:18.191] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:18.191] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:18.191] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 912000
+[2026-02-22 11:06:18.924] [info] HBM2-CH_0: BW utilization 57% (5517 reads, 0 writes)
+[2026-02-22 11:06:18.960] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:18.960] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:18.960] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:18.960] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 920000
+[2026-02-22 11:06:19.701] [info] HBM2-CH_0: BW utilization 58% (5624 reads, 0 writes)
+[2026-02-22 11:06:19.737] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:19.737] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:19.737] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:19.737] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 928000
+[2026-02-22 11:06:20.500] [info] HBM2-CH_0: BW utilization 61% (5936 reads, 0 writes)
+[2026-02-22 11:06:20.539] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:20.539] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:20.539] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:20.539] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 936000
+[2026-02-22 11:06:20.876] [info] HBM2-CH_0: BW utilization 85% (8243 reads, 0 writes)
+[2026-02-22 11:06:20.889] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:20.889] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:20.889] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:20.889] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 944000
+[2026-02-22 11:06:21.150] [info] HBM2-CH_0: BW utilization 83% (8001 reads, 37 writes)
+[2026-02-22 11:06:21.165] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:21.165] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:21.165] [info] Core [0] : Memory unit idle cycle 7720 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:21.165] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 952000
+[2026-02-22 11:06:21.427] [info] HBM2-CH_0: BW utilization 83% (7991 reads, 0 writes)
+[2026-02-22 11:06:21.440] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:21.440] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:21.440] [info] Core [0] : Memory unit idle cycle 7768 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:21.440] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 960000
+[2026-02-22 11:06:21.705] [info] HBM2-CH_0: BW utilization 83% (7999 reads, 0 writes)
+[2026-02-22 11:06:21.720] [info] Core [0] : MatMul active cycle 4992 Vector active cycle 0 
+[2026-02-22 11:06:21.720] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:21.720] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:21.720] [info] Core [0] : Systolic Array Utilization(%) 65.04 (62.40% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 968000
+[2026-02-22 11:06:22.234] [info] HBM2-CH_0: BW utilization 74% (7176 reads, 0 writes)
+[2026-02-22 11:06:22.275] [info] Core [0] : MatMul active cycle 3200 Vector active cycle 0 
+[2026-02-22 11:06:22.275] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:22.275] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:22.275] [info] Core [0] : Systolic Array Utilization(%) 43.97 (40.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 976000
+[2026-02-22 11:06:23.077] [info] HBM2-CH_0: BW utilization 58% (5632 reads, 0 writes)
+[2026-02-22 11:06:23.118] [info] Core [0] : MatMul active cycle 2560 Vector active cycle 0 
+[2026-02-22 11:06:23.118] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:23.118] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:23.118] [info] Core [0] : Systolic Array Utilization(%) 30.61 (32.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 984000
+[2026-02-22 11:06:23.915] [info] HBM2-CH_0: BW utilization 58% (5620 reads, 0 writes)
+[2026-02-22 11:06:23.956] [info] Core [0] : MatMul active cycle 5120 Vector active cycle 0 
+[2026-02-22 11:06:23.956] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:23.956] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:23.956] [info] Core [0] : Systolic Array Utilization(%) 68.38 (64.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 992000
+[2026-02-22 11:06:24.760] [info] HBM2-CH_0: BW utilization 59% (5680 reads, 0 writes)
+[2026-02-22 11:06:24.802] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:24.802] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:24.802] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:24.802] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1000000
+[2026-02-22 11:06:25.593] [info] HBM2-CH_0: BW utilization 59% (5714 reads, 0 writes)
+[2026-02-22 11:06:25.635] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:25.635] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:25.635] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:25.635] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1008000
+[2026-02-22 11:06:26.386] [info] HBM2-CH_0: BW utilization 51% (4980 reads, 0 writes)
+[2026-02-22 11:06:26.418] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:26.418] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:26.418] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:26.418] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1016000
+[2026-02-22 11:06:26.587] [info] HBM2-CH_0: BW utilization 7% (695 reads, 12 writes)
+[2026-02-22 11:06:26.592] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:26.592] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:26.592] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:26.592] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1024000
+[2026-02-22 11:06:26.695] [info] HBM2-CH_0: BW utilization 0% (0 reads, 0 writes)
+[2026-02-22 11:06:26.701] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:26.701] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:26.701] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:26.701] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1032000
+[2026-02-22 11:06:26.803] [info] HBM2-CH_0: BW utilization 0% (0 reads, 0 writes)
+[2026-02-22 11:06:26.808] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:26.808] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:26.808] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:26.808] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1040000
+[2026-02-22 11:06:27.306] [info] HBM2-CH_0: BW utilization 27% (2633 reads, 0 writes)
+[2026-02-22 11:06:27.351] [info] Core [0] : MatMul active cycle 5760 Vector active cycle 0 
+[2026-02-22 11:06:27.351] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:27.351] [info] Core [0] : Memory unit idle cycle 3618 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:27.351] [info] Core [0] : Systolic Array Utilization(%) 70.80 (72.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1048000
+[2026-02-22 11:06:28.133] [info] HBM2-CH_0: BW utilization 57% (5485 reads, 0 writes)
+[2026-02-22 11:06:28.177] [info] Core [0] : MatMul active cycle 0 Vector active cycle 0 
+[2026-02-22 11:06:28.177] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:28.177] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:28.177] [info] Core [0] : Systolic Array Utilization(%) 0.00 (0.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1056000
+[2026-02-22 11:06:28.996] [info] HBM2-CH_0: BW utilization 70% (6807 reads, 0 writes)
+[2026-02-22 11:06:29.045] [info] Core [0] : MatMul active cycle 0 Vector active cycle 0 
+[2026-02-22 11:06:29.045] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:29.045] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:29.045] [info] Core [0] : Systolic Array Utilization(%) 0.00 (0.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1064000
+[2026-02-22 11:06:29.863] [info] HBM2-CH_0: BW utilization 69% (6707 reads, 0 writes)
+[2026-02-22 11:06:29.909] [info] Core [0] : MatMul active cycle 3072 Vector active cycle 0 
+[2026-02-22 11:06:29.909] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:29.909] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:29.909] [info] Core [0] : Systolic Array Utilization(%) 42.88 (38.40% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1072000
+[2026-02-22 11:06:30.720] [info] HBM2-CH_0: BW utilization 71% (6896 reads, 0 writes)
+[2026-02-22 11:06:30.766] [info] Core [0] : MatMul active cycle 1664 Vector active cycle 0 
+[2026-02-22 11:06:30.766] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:30.766] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:30.766] [info] Core [0] : Systolic Array Utilization(%) 21.48 (20.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1080000
+[2026-02-22 11:06:31.541] [info] HBM2-CH_0: BW utilization 71% (6816 reads, 0 writes)
+[2026-02-22 11:06:31.585] [info] Core [0] : MatMul active cycle 4736 Vector active cycle 0 
+[2026-02-22 11:06:31.585] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:31.585] [info] Core [0] : Memory unit idle cycle 5470 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:31.585] [info] Core [0] : Systolic Array Utilization(%) 60.40 (59.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1088000
+[2026-02-22 11:06:32.353] [info] HBM2-CH_0: BW utilization 70% (6785 reads, 0 writes)
+[2026-02-22 11:06:32.397] [info] Core [0] : MatMul active cycle 4608 Vector active cycle 0 
+[2026-02-22 11:06:32.397] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:32.397] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:32.397] [info] Core [0] : Systolic Array Utilization(%) 61.08 (57.60% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1096000
+[2026-02-22 11:06:33.151] [info] HBM2-CH_0: BW utilization 69% (6633 reads, 0 writes)
+[2026-02-22 11:06:33.192] [info] Core [0] : MatMul active cycle 1408 Vector active cycle 0 
+[2026-02-22 11:06:33.192] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:33.192] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:33.192] [info] Core [0] : Systolic Array Utilization(%) 21.41 (17.60% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1104000
+[2026-02-22 11:06:33.917] [info] HBM2-CH_0: BW utilization 56% (5467 reads, 0 writes)
+[2026-02-22 11:06:33.959] [info] Core [0] : MatMul active cycle 3456 Vector active cycle 0 
+[2026-02-22 11:06:33.959] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:33.959] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:33.959] [info] Core [0] : Systolic Array Utilization(%) 42.26 (43.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1112000
+[2026-02-22 11:06:34.682] [info] HBM2-CH_0: BW utilization 57% (5498 reads, 0 writes)
+[2026-02-22 11:06:34.725] [info] Core [0] : MatMul active cycle 3712 Vector active cycle 0 
+[2026-02-22 11:06:34.725] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:34.725] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:34.725] [info] Core [0] : Systolic Array Utilization(%) 50.78 (46.40% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1120000
+[2026-02-22 11:06:35.454] [info] HBM2-CH_0: BW utilization 57% (5525 reads, 0 writes)
+[2026-02-22 11:06:35.498] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:35.498] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:35.498] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:35.498] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1128000
+[2026-02-22 11:06:36.225] [info] HBM2-CH_0: BW utilization 59% (5723 reads, 0 writes)
+[2026-02-22 11:06:36.270] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:36.270] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:36.270] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:36.270] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1136000
+[2026-02-22 11:06:36.952] [info] HBM2-CH_0: BW utilization 53% (4747 reads, 380 writes)
+[2026-02-22 11:06:36.986] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:36.986] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:36.986] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:36.986] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1144000
+[2026-02-22 11:06:37.557] [info] HBM2-CH_0: BW utilization 27% (0 reads, 2631 writes)
+[2026-02-22 11:06:37.591] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:37.591] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:37.591] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:37.591] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1152000
+[2026-02-22 11:06:38.252] [info] HBM2-CH_0: BW utilization 46% (3447 reads, 1040 writes)
+[2026-02-22 11:06:38.296] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:38.296] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:38.296] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:38.296] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1160000
+[2026-02-22 11:06:39.021] [info] HBM2-CH_0: BW utilization 58% (5613 reads, 0 writes)
+[2026-02-22 11:06:39.068] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:39.068] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:39.068] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:39.068] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1168000
+[2026-02-22 11:06:39.880] [info] HBM2-CH_0: BW utilization 75% (7232 reads, 0 writes)
+[2026-02-22 11:06:39.931] [info] Core [0] : MatMul active cycle 5120 Vector active cycle 0 
+[2026-02-22 11:06:39.931] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:39.931] [info] Core [0] : Memory unit idle cycle 5026 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:39.931] [info] Core [0] : Systolic Array Utilization(%) 62.80 (64.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1176000
+[2026-02-22 11:06:40.769] [info] HBM2-CH_0: BW utilization 77% (7465 reads, 0 writes)
+[2026-02-22 11:06:40.821] [info] Core [0] : MatMul active cycle 4352 Vector active cycle 0 
+[2026-02-22 11:06:40.821] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:40.821] [info] Core [0] : Memory unit idle cycle 0 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:40.821] [info] Core [0] : Systolic Array Utilization(%) 59.06 (54.40% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1184000
+[2026-02-22 11:06:41.655] [info] HBM2-CH_0: BW utilization 75% (7286 reads, 0 writes)
+[2026-02-22 11:06:41.708] [info] Core [0] : MatMul active cycle 2560 Vector active cycle 0 
+[2026-02-22 11:06:41.708] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:41.708] [info] Core [0] : Memory unit idle cycle 30 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:41.708] [info] Core [0] : Systolic Array Utilization(%) 34.10 (32.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1192000
+[2026-02-22 11:06:42.513] [info] HBM2-CH_0: BW utilization 78% (7561 reads, 0 writes)
+[2026-02-22 11:06:42.563] [info] Core [0] : MatMul active cycle 2560 Vector active cycle 0 
+[2026-02-22 11:06:42.563] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:42.563] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:42.563] [info] Core [0] : Systolic Array Utilization(%) 34.09 (32.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1200000
+[2026-02-22 11:06:43.359] [info] HBM2-CH_0: BW utilization 75% (7289 reads, 0 writes)
+[2026-02-22 11:06:43.410] [info] Core [0] : MatMul active cycle 4736 Vector active cycle 0 
+[2026-02-22 11:06:43.410] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:43.410] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:43.410] [info] Core [0] : Systolic Array Utilization(%) 59.88 (59.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1208000
+[2026-02-22 11:06:44.166] [info] HBM2-CH_0: BW utilization 63% (6059 reads, 0 writes)
+[2026-02-22 11:06:44.214] [info] Core [0] : MatMul active cycle 4736 Vector active cycle 0 
+[2026-02-22 11:06:44.214] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:44.214] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:44.214] [info] Core [0] : Systolic Array Utilization(%) 62.38 (59.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1216000
+[2026-02-22 11:06:44.964] [info] HBM2-CH_0: BW utilization 59% (5732 reads, 0 writes)
+[2026-02-22 11:06:45.015] [info] Core [0] : MatMul active cycle 256 Vector active cycle 0 
+[2026-02-22 11:06:45.015] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:45.015] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:45.015] [info] Core [0] : Systolic Array Utilization(%) 7.14 (3.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1224000
+[2026-02-22 11:06:45.765] [info] HBM2-CH_0: BW utilization 58% (5611 reads, 0 writes)
+[2026-02-22 11:06:45.814] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:45.814] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:45.814] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:45.814] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1232000
+[2026-02-22 11:06:46.558] [info] HBM2-CH_0: BW utilization 58% (5599 reads, 0 writes)
+[2026-02-22 11:06:46.607] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:46.607] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:46.607] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:46.607] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1240000
+[2026-02-22 11:06:47.350] [info] HBM2-CH_0: BW utilization 59% (5689 reads, 0 writes)
+[2026-02-22 11:06:47.400] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:47.400] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:47.400] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:47.400] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1248000
+[2026-02-22 11:06:48.154] [info] HBM2-CH_0: BW utilization 59% (5672 reads, 0 writes)
+[2026-02-22 11:06:48.206] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:48.206] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:48.206] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:48.206] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1256000
+[2026-02-22 11:06:48.971] [info] HBM2-CH_0: BW utilization 62% (6047 reads, 0 writes)
+[2026-02-22 11:06:49.025] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:49.025] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:49.025] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:49.025] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1264000
+[2026-02-22 11:06:49.833] [info] HBM2-CH_0: BW utilization 78% (7574 reads, 0 writes)
+[2026-02-22 11:06:49.888] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:49.888] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:49.888] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:49.888] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1272000
+[2026-02-22 11:06:50.721] [info] HBM2-CH_0: BW utilization 80% (7704 reads, 0 writes)
+[2026-02-22 11:06:50.779] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:50.779] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:50.779] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:50.779] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1280000
+[2026-02-22 11:06:51.623] [info] HBM2-CH_0: BW utilization 79% (7620 reads, 0 writes)
+[2026-02-22 11:06:51.683] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:51.683] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:51.683] [info] Core [0] : Memory unit idle cycle 7488 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:51.683] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1288000
+[2026-02-22 11:06:52.531] [info] HBM2-CH_0: BW utilization 79% (7616 reads, 0 writes)
+[2026-02-22 11:06:52.589] [info] Core [0] : MatMul active cycle 4480 Vector active cycle 0 
+[2026-02-22 11:06:52.589] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:52.589] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:52.589] [info] Core [0] : Systolic Array Utilization(%) 59.62 (56.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1296000
+[2026-02-22 11:06:53.442] [info] HBM2-CH_0: BW utilization 77% (7449 reads, 0 writes)
+[2026-02-22 11:06:53.499] [info] Core [0] : MatMul active cycle 2944 Vector active cycle 0 
+[2026-02-22 11:06:53.499] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:53.499] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:53.499] [info] Core [0] : Systolic Array Utilization(%) 38.88 (36.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1304000
+[2026-02-22 11:06:54.314] [info] HBM2-CH_0: BW utilization 59% (5700 reads, 0 writes)
+[2026-02-22 11:06:54.369] [info] Core [0] : MatMul active cycle 4096 Vector active cycle 0 
+[2026-02-22 11:06:54.369] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:54.369] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:54.369] [info] Core [0] : Systolic Array Utilization(%) 51.09 (51.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1312000
+[2026-02-22 11:06:55.167] [info] HBM2-CH_0: BW utilization 59% (5685 reads, 0 writes)
+[2026-02-22 11:06:55.222] [info] Core [0] : MatMul active cycle 3456 Vector active cycle 0 
+[2026-02-22 11:06:55.222] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:55.222] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:55.222] [info] Core [0] : Systolic Array Utilization(%) 47.20 (43.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1320000
+[2026-02-22 11:06:56.010] [info] HBM2-CH_0: BW utilization 59% (5680 reads, 0 writes)
+[2026-02-22 11:06:56.066] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:56.066] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:56.066] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:56.066] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1328000
+[2026-02-22 11:06:56.850] [info] HBM2-CH_0: BW utilization 60% (5779 reads, 0 writes)
+[2026-02-22 11:06:56.906] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:56.906] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:56.906] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:56.906] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1336000
+[2026-02-22 11:06:57.651] [info] HBM2-CH_0: BW utilization 52% (5046 reads, 0 writes)
+[2026-02-22 11:06:57.698] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:57.698] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:57.698] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:57.698] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1344000
+[2026-02-22 11:06:58.031] [info] HBM2-CH_0: BW utilization 16% (1499 reads, 45 writes)
+[2026-02-22 11:06:58.038] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:58.038] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:58.038] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:58.038] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1352000
+[2026-02-22 11:06:58.140] [info] HBM2-CH_0: BW utilization 0% (0 reads, 0 writes)
+[2026-02-22 11:06:58.147] [info] Core [0] : MatMul active cycle 8064 Vector active cycle 0 
+[2026-02-22 11:06:58.147] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:58.147] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:58.147] [info] Core [0] : Systolic Array Utilization(%) 100.00 (100.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1360000
+[2026-02-22 11:06:58.247] [info] HBM2-CH_0: BW utilization 0% (0 reads, 0 writes)
+[2026-02-22 11:06:58.254] [info] Core [0] : MatMul active cycle 7936 Vector active cycle 0 
+[2026-02-22 11:06:58.254] [info] Core [0] : issued tile 2 
+[2026-02-22 11:06:58.254] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:58.254] [info] Core [0] : Systolic Array Utilization(%) 100.00 (99.20% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1368000
+[2026-02-22 11:06:58.471] [info] HBM2-CH_0: BW utilization 6% (0 reads, 663 writes)
+[2026-02-22 11:06:58.505] [info] Layer  finish at 1375939
+[2026-02-22 11:06:58.505] [info] Total compute time 641151
+[2026-02-22 11:06:58.505] [info] Model[llama3] Request: 0 us, Start: 0 us, finish:1375 us, Current Cycle:1375939
+[2026-02-22 11:06:58.505] [info] No total_seq_len!
+[2026-02-22 11:06:58.509] [info] Core [0] : MatMul active cycle 7424 Vector active cycle 0 
+[2026-02-22 11:06:58.509] [info] Core [0] : issued tile 0 
+[2026-02-22 11:06:58.509] [info] Core [0] : Memory unit idle cycle 6976 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:58.509] [info] Core [0] : Systolic Array Utilization(%) 91.97 (92.80% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1376000
+[2026-02-22 11:06:59.050] [info] HBM2-CH_0: BW utilization 27% (0 reads, 2631 writes)
+[2026-02-22 11:06:59.091] [info] Core [0] : MatMul active cycle 0 Vector active cycle 0 
+[2026-02-22 11:06:59.091] [info] Core [0] : issued tile 0 
+[2026-02-22 11:06:59.091] [info] Core [0] : Memory unit idle cycle 8000 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:59.091] [info] Core [0] : Systolic Array Utilization(%) 0.00 (0.00% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1384000
+[2026-02-22 11:06:59.223] [info] Simulation Finished at 1385951 cycle 1385 us
+[2026-02-22 11:06:59.223] [info] Core [0] : MatMul active cycle 1048576 Vector active cycle 0 
+[2026-02-22 11:06:59.223] [info] Core [0] : Memory unit idle cycle 1112543 Systolic bubble cycle 0 Core idle cycle 1403 
+[2026-02-22 11:06:59.223] [info] Core [0] : Systolic Array Utilization(%) 76.63 (75.66% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1385951
+[2026-02-22 11:06:59.223] [info] Core [0] : Systolic Inst Issue Count : 8192
+[2026-02-22 11:06:59.223] [info] Core [0] : Systolic PRELOAD Issue Count : 8192
+[2026-02-22 11:06:59.223] [info] Core [1] : MatMul active cycle 1048576 Vector active cycle 0 
+[2026-02-22 11:06:59.223] [info] Core [1] : Memory unit idle cycle 1112543 Systolic bubble cycle 458 Core idle cycle 286 
+[2026-02-22 11:06:59.223] [info] Core [1] : Systolic Array Utilization(%) 76.64 (75.66% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1385951
+[2026-02-22 11:06:59.223] [info] Core [1] : Systolic Inst Issue Count : 8192
+[2026-02-22 11:06:59.223] [info] Core [1] : Systolic PRELOAD Issue Count : 8192
+[2026-02-22 11:06:59.223] [info] Core [2] : MatMul active cycle 1048576 Vector active cycle 0 
+[2026-02-22 11:06:59.223] [info] Core [2] : Memory unit idle cycle 1112543 Systolic bubble cycle 0 Core idle cycle 0 
+[2026-02-22 11:06:59.223] [info] Core [2] : Systolic Array Utilization(%) 76.65 (75.66% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1385951
+[2026-02-22 11:06:59.223] [info] Core [2] : Systolic Inst Issue Count : 8192
+[2026-02-22 11:06:59.223] [info] Core [2] : Systolic PRELOAD Issue Count : 8192
+[2026-02-22 11:06:59.223] [info] Core [3] : MatMul active cycle 1048576 Vector active cycle 0 
+[2026-02-22 11:06:59.223] [info] Core [3] : Memory unit idle cycle 1112543 Systolic bubble cycle 0 Core idle cycle 837 
+[2026-02-22 11:06:59.223] [info] Core [3] : Systolic Array Utilization(%) 76.63 (75.66% PE util), Vector Unit Utilization(%) 0.00, Total cycle: 1385951
+[2026-02-22 11:06:59.223] [info] Core [3] : Systolic Inst Issue Count : 8192
+[2026-02-22 11:06:59.223] [info] Core [3] : Systolic PRELOAD Issue Count : 8192
+Frontend:
+  impl: GEM5
+
+[2026-02-22 11:06:59.224] [info] Row hits: 910353, Row misses: 7735, Row conflicts: 175120
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 45056
+  total_num_read_requests: 1048576
+  memory_system_cycles: 1663806
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+  Controller:
+    impl: Generic
+    id: Channel 0
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+
+
+
+[2026-02-22 11:06:59.224] [info] HBM2-CH_0: avg BW utilization 65% (1048576 reads, 45056 writes)
+Frontend:
+  impl: GEM5
+
+[2026-02-22 11:06:59.224] [info] Row hits: 920818, Row misses: 2253, Row conflicts: 170289
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 45056
+  total_num_read_requests: 1048576
+  memory_system_cycles: 1663806
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+  Controller:
+    impl: Generic
+    id: Channel 0
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+
+
+
+Frontend:
+  impl: GEM5
+
+[2026-02-22 11:06:59.224] [info] Row hits: 921879, Row misses: 2867, Row conflicts: 168614
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 45056
+  total_num_read_requests: 1048576
+  memory_system_cycles: 1663806
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+  Controller:
+    impl: Generic
+    id: Channel 0
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+
+
+
+Frontend:
+  impl: GEM5
+
+[2026-02-22 11:06:59.224] [info] Row hits: 911011, Row misses: 6975, Row conflicts: 175206
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 45056
+  total_num_read_requests: 1048576
+  memory_system_cycles: 1663806
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+  Controller:
+    impl: Generic
+    id: Channel 0
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+
+
+
+Frontend:
+  impl: GEM5
+
+[2026-02-22 11:06:59.224] [info] Row hits: 920870, Row misses: 2006, Row conflicts: 170516
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 45056
+  total_num_read_requests: 1048576
+  memory_system_cycles: 1663806
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+  Controller:
+    impl: Generic
+    id: Channel 0
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+
+
+
+Frontend:
+  impl: GEM5
+
+[2026-02-22 11:06:59.224] [info] Row hits: 913314, Row misses: 6710, Row conflicts: 173123
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 45056
+  total_num_read_requests: 1048576
+  memory_system_cycles: 1663806
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+  Controller:
+    impl: Generic
+    id: Channel 0
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+
+
+
+Frontend:
+  impl: GEM5
+
+[2026-02-22 11:06:59.224] [info] Row hits: 910370, Row misses: 7247, Row conflicts: 175575
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 45056
+  total_num_read_requests: 1048576
+  memory_system_cycles: 1663806
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+  Controller:
+    impl: Generic
+    id: Channel 0
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+
+
+
+Frontend:
+  impl: GEM5
+
+[2026-02-22 11:06:59.224] [info] Row hits: 921126, Row misses: 3047, Row conflicts: 169187
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 45056
+  total_num_read_requests: 1048576
+  memory_system_cycles: 1663806
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+  Controller:
+    impl: Generic
+    id: Channel 0
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+
+
+
+Frontend:
+  impl: GEM5
+
+[2026-02-22 11:06:59.224] [info] Row hits: 921242, Row misses: 2305, Row conflicts: 169631
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 45056
+  total_num_read_requests: 1048576
+  memory_system_cycles: 1663806
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+  Controller:
+    impl: Generic
+    id: Channel 0
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+
+
+
+Frontend:
+  impl: GEM5
+
+[2026-02-22 11:06:59.224] [info] Row hits: 912145, Row misses: 2781, Row conflicts: 178390
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 45056
+  total_num_read_requests: 1048576
+  memory_system_cycles: 1663806
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+  Controller:
+    impl: Generic
+    id: Channel 0
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+
+
+
+Frontend:
+  impl: GEM5
+
+[2026-02-22 11:06:59.224] [info] Row hits: 912456, Row misses: 2816, Row conflicts: 178088
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 45056
+  total_num_read_requests: 1048576
+  memory_system_cycles: 1663806
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+  Controller:
+    impl: Generic
+    id: Channel 0
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+
+
+
+Frontend:
+  impl: GEM5
+
+[2026-02-22 11:06:59.224] [info] Row hits: 919808, Row misses: 2320, Row conflicts: 171016
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 45056
+  total_num_read_requests: 1048576
+  memory_system_cycles: 1663806
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+  Controller:
+    impl: Generic
+    id: Channel 0
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+
+
+
+Frontend:
+  impl: GEM5
+
+[2026-02-22 11:06:59.224] [info] Row hits: 912205, Row misses: 4864, Row conflicts: 176291
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 45056
+  total_num_read_requests: 1048576
+  memory_system_cycles: 1663806
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+  Controller:
+    impl: Generic
+    id: Channel 0
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+
+
+
+Frontend:
+  impl: GEM5
+
+[2026-02-22 11:06:59.224] [info] Row hits: 919845, Row misses: 1765, Row conflicts: 171590
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 45056
+  total_num_read_requests: 1048576
+  memory_system_cycles: 1663806
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+  Controller:
+    impl: Generic
+    id: Channel 0
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+
+
+
+Frontend:
+  impl: GEM5
+
+[2026-02-22 11:06:59.224] [info] Row hits: 920851, Row misses: 1645, Row conflicts: 170688
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 45056
+  total_num_read_requests: 1048576
+  memory_system_cycles: 1663806
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+  Controller:
+    impl: Generic
+    id: Channel 0
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+
+
+
+Frontend:
+  impl: GEM5
+
+[2026-02-22 11:06:59.224] [info] Row hits: 912408, Row misses: 4002, Row conflicts: 176950
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 45056
+  total_num_read_requests: 1048576
+  memory_system_cycles: 1663806
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+  Controller:
+    impl: Generic
+    id: Channel 0
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+
+
+
+[2026-02-22 11:06:59.224] [info] Simulation time: 110.762739 seconds
+[2026-02-22 11:06:59.224] [info] Total tile: 68, simulated tile per seconds(TPS): 0.701979
