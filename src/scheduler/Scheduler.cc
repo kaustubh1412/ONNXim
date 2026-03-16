@@ -58,18 +58,37 @@ void Scheduler::issue_tile_per_core(std::vector<uint32_t>& allowed_cpu, int offs
     if (tile->status == Tile::Status::BAR)
       break;
 
-    uint32_t core_id = offset;
-    if (tile->core_id == -1) { // -1 is global id
-      core_id += _core_rr_id;
-      _core_rr_id = _core_rr_id + 1; // increase with round robin
-    } else {
-      core_id = tile->core_id + _nr_layer;
+    // update start
+    uint32_t best_core_id = allowed_cpu[0];
+    size_t min_queue_size = _core_executable_tile_queue[best_core_id].size();
+
+    for (uint32_t cpu_id : allowed_cpu) {
+      if (_core_executable_tile_queue[cpu_id].size() < min_queue_size) {
+        min_queue_size = _core_executable_tile_queue[cpu_id].size();
+        best_core_id = cpu_id;
+      }
     }
-    core_id = allowed_cpu[core_id % allowed_cpu.size()];
-    spdlog::debug("pushed to queue[{}], tile->core_id: {}", core_id, tile->core_id);
-    tile->core_id = core_id;
-    _core_executable_tile_queue[core_id].push_back(std::move(tile));
+
+    tile->core_id = best_core_id;
+    _core_executable_tile_queue[best_core_id].push_back(std::move(tile));
     _executable_tile_queue[partition_id].pop_front();
+    spdlog::debug("Greedily pushed to Core {}, Queue Size: {}", best_core_id, min_queue_size);
+    // update end
+
+
+    
+    // uint32_t core_id = offset;
+    // if (tile->core_id == -1) { // -1 is global id
+    //   core_id += _core_rr_id;
+    //   _core_rr_id = _core_rr_id + 1; // increase with round robin
+    // } else {
+    //   core_id = tile->core_id + _nr_layer;
+    // }
+    // core_id = allowed_cpu[core_id % allowed_cpu.size()];
+    // spdlog::debug("pushed to queue[{}], tile->core_id: {}", core_id, tile->core_id);
+    // tile->core_id = core_id;
+    // _core_executable_tile_queue[core_id].push_back(std::move(tile));
+    // _executable_tile_queue[partition_id].pop_front();
   }
 }
 
