@@ -1,0 +1,3 @@
+Simulator Version,Total Cycles,Simulation Time (s),Tiles per Second (TPS),Avg BW Utilization (%),Core 0 Util (%),Core 1 Util (%),Core 2 Util (%),Core 3 Util (%),Core Util Variance
+Before Modification,1519303,119.449064,0.740468,66,71.75,71.37,63.58,73.96,10.38
+After Modification,1385951,110.762739,0.701979,65,76.63,76.64,76.65,76.63,0.02
